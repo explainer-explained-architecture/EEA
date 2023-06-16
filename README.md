@@ -1,6 +1,7 @@
 # PyTorch Implementation of Explainer-Explained Architecture (EEA) for Vision Models
 
 This paper introduces the Explainer-Explained Architecture (EEA), a novel architecture for post-hoc explanations for vision models. EEA incorporates an _explainer_ model designed to generate explanation maps that emphasize the most crucial regions that justify the predictions of the model being _explained_. The training regimen for the explainer involves an initial pre-training stage, followed by a per-instance finetuning stage. The optimization during both stages employs a unique configuration in which the explained model's prediction for a masked input is compared to its original prediction for the unmasked input. This approach enables a novel counterfactual objective, aiming to anticipate the model's result using masked versions of the input image. Notably, EEA is model-agnostic and showcases its capacity to yield explanations for both Transformer-based and convolutional models. Our evaluations show that EEA substantially surpasses the current state-of-the-art in explainability for vision Transformers while delivering competitive results in explaining convolutional models.
+In addition to the paper, we have additional results in the following link: [EEA___CIKM_Additional_Results.pdf]
 
 <img src="images\2_classes_vis_github.png" alt="2_classes_vis_github" width="250" height="200" align:center/>
 
